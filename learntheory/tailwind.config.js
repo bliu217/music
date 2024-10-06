@@ -11,6 +11,7 @@ module.exports = {
       fontFamily: {
         helvetica: ['Helvetica', 'Arial', 'sans-serif'],
         outfit: ['Outfit', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
       },
     },
   },
