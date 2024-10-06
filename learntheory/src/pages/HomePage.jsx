@@ -9,6 +9,7 @@ import PlanCard from "../components/PlanCard";
 const HomePage = () => {
   return (
     <div className="pb-20">
+      <div class = "gradient-circle"> </div>
       <div className="mx-40 my-20 flex">
         <div>
           <br></br>

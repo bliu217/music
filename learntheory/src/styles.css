@@ -13,11 +13,13 @@
   }
 }
 
-  .gradient-div {
-    width: 2050px; /* Set the width of the div */
-    height: 2000px; /* Set the height of the div */
-    background: radial-gradient(circle, #ffffff, #c2e6fe); /* Apply circular gradient */
-    border-radius: 0%; /* Optional: make it a circle */
+.gradient-circle {
+  width: 1000px;                /* Width of the circle */
+  height: 1000px;   
+  left: -500px;            /* Height of the circle (same as width for a perfect circle) */
+  border-radius: 00%;          /* Make the div a circle */
+  background: radial-gradient(circle, #659fd9 5%, #ffffff00 50%, #ffffff00 100%);/* Apply circular gradient */
+  position: absolute;
 }
 .full-page-div {
   position: fixed; /* Use fixed positioning */
