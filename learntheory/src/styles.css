@@ -13,7 +13,7 @@
   }
 }
 
-  .gradient-div {
+.gradient-div {
     width: 2050px; /* Set the width of the div */
     height: 2000px; /* Set the height of the div */
     background: radial-gradient(circle, #ffffff, #c2e6fe); /* Apply circular gradient */
@@ -36,4 +36,15 @@
 body {
   background-color: #FBF9F8;
   /* Example: Tailwind's blue-500 */
+}
+.bg-parch {
+  background-color: #FBF9F8;
+}
+
+.bg-bblue {
+  background-color: #1350B2;
+}
+
+.shadow-mid-blue {
+  box-shadow: -10px 10px #C2D9FE;
 }
