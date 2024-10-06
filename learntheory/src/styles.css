@@ -12,3 +12,7 @@
     @apply font-outfit;
   }
 }
+body {
+  background-color: #FBF9F8;
+  /* Example: Tailwind's blue-500 */
+}
