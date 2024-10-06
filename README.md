@@ -1,4 +1,4 @@
-MELODIFY
+**MELODIFY**
 
 AUDIENCE:
 People interested in learning music theory, with a focus for RCM students (planning to take exams?)
