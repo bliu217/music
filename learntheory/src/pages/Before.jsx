@@ -1,18 +1,6 @@
 import React from "react";
-import SideBar from "../components/SideBar";
-import Topic from "../components/Topic";
-import Footer from "../components/Footer";
 import keyboard from "../assets/images/keyboard.png";
-import {
-  Card,
-  CardBody,
-  CardHeader,
-  Button,
-  Link,
-} from "@nextui-org/react";
-import ledger from "../assets/scorebuilder/ledger.png";
-import noteLedger from "../assets/scorebuilder/noteCardLedger.png";
-import whole from "../assets/scorebuilder/wholeNote.png";
+import { Card, CardBody, CardHeader, Button, Link } from "@nextui-org/react";
 import fullCircle from "../assets/misc/full.png";
 import listIcon from "../assets/misc/List.png";
 import partialCircle from "../assets/misc/partial.png";
