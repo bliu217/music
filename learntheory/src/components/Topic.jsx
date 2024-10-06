@@ -18,6 +18,7 @@ import eight from "../assets/scorebuilder/eighthNotes.png";
 import measure from "../assets/scorebuilder/measureLine.png";
 import eightS from "../assets/scorebuilder/eighthNote.png";
 import noteLedger from "../assets/scorebuilder/noteCardLedger.png";
+import question from "../assets/scorebuilder/question.png";
 
 const Topic = () => {
   const [selectedValue, setSelected] = useState([]);
@@ -214,7 +215,8 @@ const Topic = () => {
               <h3>How many beats does a whole note last?</h3>
             </CardHeader>
             <CardBody>
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-col gap-3 relative">
+                <img src={question} className="w-[140px] absolute right-5" />
                 <CheckboxGroup
                   value={selectedValue}
                   onValueChange={setSelected}
