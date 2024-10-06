@@ -27,7 +27,7 @@ const HomePage = () => {
           </p>
           <Button className="bg-bblue text-white font-outfit mb-5 mt-10 px-6 py-7 text-lg hover:bg-blue-600">
             {" "}
-            <Link href="/learn" className="text-inherit">
+            <Link href="/before" className="text-inherit">
               GET STARTED
             </Link>
           </Button>
@@ -64,14 +64,6 @@ const HomePage = () => {
         </div>
       </div>
 
-      {/* <div class=" mt-40 border-t-1 border-t-black justify-between flex items-center">
-        <img src={logo} alt="my-image" class="w-50 h-auto ml-20 mt-10 z-1" />
-        <p class="text-right mr-20 mt-10 font-poppins text-lg">
-          {" "}
-          melodify@gmail.com <br></br>instagram <br></br>
-          linkedin
-        </p>
-      </div> */}
     </div>
   );
 };

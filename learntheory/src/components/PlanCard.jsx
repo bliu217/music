@@ -6,6 +6,7 @@ import {
   Button,
   CardBody,
   CardHeader,
+  Link,
 } from "@nextui-org/react";
 
 const PlanCard = ({ title, description, image }) => {
@@ -22,7 +23,8 @@ const PlanCard = ({ title, description, image }) => {
         <h3>{description}</h3>
       </CardBody>
       <CardFooter className="justify-center">
-        <Button className="bg-bblue text-white font-outfit mb-5">GO TO</Button>
+        <Button className="bg-bblue text-white font-outfit mb-5">
+        <Link href="/learn" className="text-inherit">GO TO</Link></Button>
       </CardFooter>
     </Card>
   );
