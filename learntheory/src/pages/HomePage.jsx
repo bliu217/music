@@ -4,7 +4,7 @@ import logo from "../assets/images/logo.png";
 import beginner from "../assets/images/beginner.png";
 import intermediate from "../assets/images/intermediate.png";
 import advanced from "../assets/images/advanced.png";
-import { Button } from "@nextui-org/react";
+import { Button, Link } from "@nextui-org/react";
 
 import PlanCard from "../components/PlanCard";
 
@@ -26,7 +26,9 @@ const HomePage = () => {
           </p>
           <Button className="bg-bblue text-white font-outfit mb-5 mt-10 px-6 py-7 text-lg hover:bg-blue-600">
             {" "}
-            GET STARTED
+            <Link href="/learn" className="text-inherit">
+              GET STARTED
+            </Link>
           </Button>
         </div>
         <img

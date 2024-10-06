@@ -21,11 +21,16 @@ import noteLedger from "../assets/scorebuilder/noteCardLedger.png";
 
 const Topic = () => {
   const [selectedValue, setSelected] = useState([]);
+  const [isCorrect, setIsCorrect] = useState(false);
+  const [formSubmitted, setSubmitted] = useState(false);
+
   const handleSubmit = () => {
-    if ((selectedValue = "4")) {
-      return "correct";
+    setSubmitted(true);
+    if (selectedValue == "4") {
+      setIsCorrect(true);
+    } else {
+      setIsCorrect(false);
     }
-    return "false";
   };
 
   return (
@@ -191,9 +196,9 @@ const Topic = () => {
       </div>
 
       <div className="mt-24">
-        <h1 className="text-dark-blue text-3xl font-bold">LOCK IT IN!</h1>
+        <h1 className="text-dark-blue text-3xl font-bold mb-10">LOCK IT IN!</h1>
         <div className="w-[600px]">
-          <Card>
+          <Card className="shadow-none bg-transparent border-solid border-2 border-black p-5">
             <CardHeader>
               <h3>How many beats does a whole note last?</h3>
             </CardHeader>
@@ -208,7 +213,17 @@ const Topic = () => {
                   <Checkbox value="3">3 beat</Checkbox>
                   <Checkbox value="4">4 beat</Checkbox>
                 </CheckboxGroup>
-                <Button onPress={handleSubmit}>SUBMIT</Button>
+                <Button
+                  className="bg-bblue text-white font-bold my-5"
+                  onPress={handleSubmit}
+                >
+                  SUBMIT
+                </Button>
+                <div
+                  className={`${isCorrect ? "text-lime-700" : "text-red-500"}`}
+                >
+                  {formSubmitted ? (isCorrect ? "Correct!" : "Incorrect.") : ""}
+                </div>
               </div>
             </CardBody>
           </Card>
