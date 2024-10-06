@@ -12,11 +12,13 @@ const Navigation = () => {
   return (
     <Navbar isBlurred={true} className="bg-transparent">
       <NavbarBrand>
-        <h3 className="font-bold">MELODIFY</h3>
+        <Link href="/" className="font-bold" color="foreground">
+          MELODIFY
+        </Link>
       </NavbarBrand>
       <NavbarContent className="sm:flex gap-4 font-outfit" justify="end">
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="/learn">
             LEARN
           </Link>
         </NavbarItem>
