@@ -10,7 +10,7 @@ import {
 
 const Navigation = () => {
   return (
-    <Navbar isBlurred={true} className="bg-transparent">
+    <Navbar isBlurred={true} className="bg-transparent border-b-1 border-black">
       <NavbarBrand>
         <Link href="/" className="font-bold" color="foreground">
           MELODIFY

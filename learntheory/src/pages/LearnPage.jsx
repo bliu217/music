@@ -5,8 +5,9 @@ import Footer from "../components/Footer";
 
 const LearnPage = () => {
   return (
-    <div>
+    <div className="flex bg-parch">
       <SideBar />
+      <div className="w-72"></div>
       <Topic />
 
     </div>
