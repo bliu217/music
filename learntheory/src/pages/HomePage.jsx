@@ -12,8 +12,8 @@ const HomePage = () => {
           <br></br>
           <br></br>
           <br></br>
-          <h1 className="text-7xl font-bold">MELODIFY</h1>
-          <div className="font-poppins mt-5 text-4xl">
+          <h1 className="text-6xl font-bold">MELODIFY</h1>
+          <div className="font-poppins mt-5 text-2xl">
             (Website name) offers a fun and interactive way to learn the
             fundamentals of music. Whether you're a beginner or looking to
             refine your skills, enjoy our range of engaging exercises, real-time
@@ -21,7 +21,7 @@ const HomePage = () => {
             of music theory at their own pace.
           </div>
         </div>
-        <img src={myImage} alt="my-image" class = "w-[500px] h-[500px] ml-10"/>
+        <img src={myImage} alt="my-image" class="w-[500px] h-[500px] ml-10" />
       </div>
 
       <div className="flex mx-20 my-20">
