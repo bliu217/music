@@ -10,7 +10,7 @@ import {
 
 const Navigation = () => {
   return (
-    <Navbar>
+    <Navbar isBlurred={false} className="bg-transparent">
       <NavbarBrand>
         <h3 className="font-bold">MELODIFY</h3>
       </NavbarBrand>

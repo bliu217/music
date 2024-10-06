@@ -32,3 +32,7 @@
   font-size: 24px; /* Text size */
 }
 }
+body {
+  background-color: #FBF9F8;
+  /* Example: Tailwind's blue-500 */
+}

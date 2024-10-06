@@ -5,7 +5,6 @@ import PlanCard from "../components/PlanCard";
 const HomePage = () => {
   return (
     <>
-    <div class = "full-page-div gradient-div">
       <div className="mx-40 my-20 flex">
         <div>
           <br></br>
@@ -14,7 +13,7 @@ const HomePage = () => {
           <br></br>
           <br></br>
           <h1 className="text-6xl font-bold">MELODIFY</h1>
-          <div className="font-poppins mt-5 text-2xl">
+          <div className="font-poppins mt-10 text-2xl">
             (Website name) offers a fun and interactive way to learn the
             fundamentals of music. Whether you're a beginner or looking to
             refine your skills, enjoy our range of engaging exercises, real-time
@@ -26,11 +25,10 @@ const HomePage = () => {
       </div>
     
 
-      <div className="flex mx-20 my-20">
+      <div className="flex mx-20 mt-20 justify-center">
         <PlanCard title="Beginner" description="starting out!" />
         <PlanCard title="Intermediate" description="getting there!" />
         <PlanCard title="Advanced" description="professional!" />
-      </div>
       </div>
     </>
   );
