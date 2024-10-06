@@ -4,17 +4,17 @@ import { Link, Button } from "@nextui-org/react";
 
 const SideBar = () => {
   return (
-    <div className="fixed top-20 w-1/4 min-w-60">
-      {/* <div className="border-b-1 border-t-1 border-solid border-r-1 border-black w-full relative">
+    <div className="fixed top-18 w-72 min-w-60 flex flex-col">
+      <div className="border-solid border-r-1 border-black w-full items-center py-2">
         <Button
           href="/"
           color="foreground"
           disableAnimation
-          className="rounded-none text-2xl absolute right-0 w-fit "
+          className="rounded-none text-xl w-fit pl-14 py-4"
         >
           back to overview
         </Button>
-      </div> */}
+      </div>
 
       <Topics />
     </div>

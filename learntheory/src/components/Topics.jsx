@@ -31,7 +31,7 @@ const Topics = () => {
 
   return (
     <div className="flex h-screen border-r-1 border-t-1 border-black justify-end relative">
-      <Navbar className="flex-col justify-start h-screen bg-inherit right-0 w-fit pr-5 pt-10">
+      <Navbar className="flex-col justify-start h-screen bg-inherit right-0 w-fit pr-5 pt-5">
         <NavbarContent className="px-0 flex-col justify-start items-start gap-0">
           {topics.map((topic) => (
             <>
@@ -39,14 +39,14 @@ const Topics = () => {
                 <Link
                   href="#"
                   color="foreground"
-                  className="font-bold uppercase text-2xl px-0"
+                  className="font-bold uppercase text-3xl px-0"
                 >
                   {topic.title}
                 </Link>
               </NavbarItem>
               {topic.subtopics.map((title) => (
-                <NavbarItem className="pl-5 pb-4">
-                  <Link href="#" color="foreground" className="text-2xl">
+                <NavbarItem className="pl-5 pb-1">
+                  <Link href="#" className="text-2xl text-dark-blue">
                     {title}
                   </Link>
                 </NavbarItem>

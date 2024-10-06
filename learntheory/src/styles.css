@@ -68,6 +68,9 @@ body {
   background-color: #1350B2;
 }
 
+.text-dark-blue {
+  color: #1350B2;
+}
 .shadow-mid-blue {
   box-shadow: -10px 10px #C2D9FE;
 }

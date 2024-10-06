@@ -6,7 +6,7 @@ const LearnPage = () => {
   return (
     <div className="flex bg-parch">
       <SideBar />
-      <div className="w-1/4"></div>
+      <div className="w-72"></div>
       <Topic />
     </div>
   );
