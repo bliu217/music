@@ -9,7 +9,7 @@ import PlanCard from "../components/PlanCard";
 const HomePage = () => {
   return (
     <div className="pb-20">
-      <div class = "gradient-circle"> </div>
+      <div class="gradient-circle"> </div>
       <div className="mx-40 my-20 flex">
         <div>
           <br></br>
@@ -29,26 +29,30 @@ const HomePage = () => {
         <img src={myImage} alt="my-image" class="w-[500px] h-[500px] ml-10" />
       </div>
 
-      <div className="flex mx-40 mt-20 justify-center">
-        <PlanCard
-          title="Beginner"
-          description="notes, keys, rhythms, intervals"
-          image={beginner}
-        />
-        <PlanCard
-          title="Intermediate"
-          description="chord progressions, cadences"
-          image={intermediate}
-        />
-        <PlanCard
-          title="Advanced"
-          description="counterpoint, analysis, composition"
-          image={advanced}
-        />
+      <div className="justify-center mt-32">
+        <h1 className="text-center font-bold text-3xl">COURSE PLANS</h1>
+        <p className="text-center mt-5 italic text-lg">
+          choose your learning journey
+        </p>
+        <div className="flex mx-40 mt-20 justify-center">
+          <PlanCard
+            title="Beginner"
+            description="notes, keys, rhythms, intervals"
+            image={beginner}
+          />
+          <PlanCard
+            title="Intermediate"
+            description="chord progressions, cadences"
+            image={intermediate}
+          />
+          <PlanCard
+            title="Advanced"
+            description="counterpoint, analysis, composition"
+            image={advanced}
+          />
+        </div>
       </div>
-
     </div>
-  
   );
 };
 
