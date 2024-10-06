@@ -5,6 +5,7 @@ import PlanCard from "../components/PlanCard";
 const HomePage = () => {
   return (
     <>
+    <div class = "full-page-div gradient-div">
       <div className="mx-40 my-20 flex">
         <div>
           <br></br>
@@ -23,11 +24,13 @@ const HomePage = () => {
         </div>
         <img src={myImage} alt="my-image" class="w-[500px] h-[500px] ml-10" />
       </div>
+    
 
       <div className="flex mx-20 my-20">
         <PlanCard title="Beginner" description="starting out!" />
         <PlanCard title="Intermediate" description="getting there!" />
         <PlanCard title="Advanced" description="professional!" />
+      </div>
       </div>
     </>
   );

@@ -11,4 +11,24 @@
   h6 {
     @apply font-outfit;
   }
+
+  .gradient-div {
+    width: 2050px; /* Set the width of the div */
+    height: 2000px; /* Set the height of the div */
+    background: radial-gradient(circle, #ffffff, #c2e6fe); /* Apply circular gradient */
+    border-radius: 0%; /* Optional: make it a circle */
+}
+.full-page-div {
+  position: fixed; /* Use fixed positioning */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  background-color: #3498db; /* Set background color */
+  color: white; /* Set text color */
+  display: flex; /* Center content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  font-size: 24px; /* Text size */
+}
 }
