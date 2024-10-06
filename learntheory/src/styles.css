@@ -32,7 +32,7 @@ div {
   right: -700px;            /* Height of the circle (same as width for a perfect circle) */
   border-radius: 00%;          /* Make the div a circle */
   background: radial-gradient(circle, #97c1eb 5%, #ffffff00 50%, #ffffff00 100%);/* Apply circular gradient */
-  position: absolute;
+  position: relative;
   z-index: 0;
 }
 
