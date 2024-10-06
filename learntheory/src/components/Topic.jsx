@@ -1,4 +1,12 @@
-import { Card, CardBody, CardHeader } from "@nextui-org/react";
+import {
+  Card,
+  CardBody,
+  CardHeader,
+  CheckboxGroup,
+  Checkbox,
+  Button,
+} from "@nextui-org/react";
+import { useState } from "react";
 import React from "react";
 import ledger from "../assets/scorebuilder/ledger.png";
 import fourFour from "../assets/scorebuilder/4_4.png";
@@ -12,6 +20,14 @@ import eightS from "../assets/scorebuilder/eighthNote.png";
 import noteLedger from "../assets/scorebuilder/noteCardLedger.png";
 
 const Topic = () => {
+  const [selectedValue, setSelected] = useState([]);
+  const handleSubmit = () => {
+    if ((selectedValue = "4")) {
+      return "correct";
+    }
+    return "false";
+  };
+
   return (
     <div className="flex-1 p-16 h-full bg-parch">
       <h1 className="font-bold text-5xl">BASICS</h1>
@@ -169,6 +185,31 @@ const Topic = () => {
                 <li>filled note head with a stem and flag</li>
                 <li>2 eighth notes = 1 quarter note</li>
               </ul>
+            </CardBody>
+          </Card>
+        </div>
+      </div>
+
+      <div className="mt-24">
+        <h1 className="text-dark-blue text-3xl font-bold">LOCK IT IN!</h1>
+        <div className="w-[600px]">
+          <Card>
+            <CardHeader>
+              <h3>How many beats does a whole note last?</h3>
+            </CardHeader>
+            <CardBody>
+              <div className="flex flex-col gap-3">
+                <CheckboxGroup
+                  value={selectedValue}
+                  onValueChange={setSelected}
+                >
+                  <Checkbox value="1">1 beat</Checkbox>
+                  <Checkbox value="2">2 beat</Checkbox>
+                  <Checkbox value="3">3 beat</Checkbox>
+                  <Checkbox value="4">4 beat</Checkbox>
+                </CheckboxGroup>
+                <Button onPress={handleSubmit}>SUBMIT</Button>
+              </div>
             </CardBody>
           </Card>
         </div>
