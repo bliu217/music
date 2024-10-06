@@ -21,8 +21,8 @@ const Before = () => {
         />
       </div>
 
-      <div className="relative flex items-center justify-center mx-40 mt-40 py-20">
-        <div>
+      <div className="relative flex items-center justify-center mx-40 mt-20 py-20">
+        <div className="ml-40">
           <Card className="shadow-[-5px_5px_10px_0_rgba(0,0,0,0.75)] border-2 border-black">
             <CardHeader className="items-start">
               <img src={listIcon} className="w-[28px] mr-5" />
@@ -56,9 +56,9 @@ const Before = () => {
           </Card>
         </div>
 
-        <div className="mx-60">
+        <div className="ml-40 mr-20">
           <h2 className="font-bold text-4xl">OVERVIEW</h2>
-          <p className="font-poppins mt-30  text-2xl z-1">
+          <p className="font-poppins mt-30  text-xl z-1 mt-5">
             Just embarking on your journey into the world of music theory and
             reading? Dive into the fundamentals of reading a staff and clefs,
             notes, and rests. You'll also learn the basics of rhythms like time
