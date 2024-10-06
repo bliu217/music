@@ -11,7 +11,7 @@ import PlanCard from "../components/PlanCard";
 
 const HomePage = () => {
   return (
-    <div className="pb-20">
+    <div className="pb-20 w-screen">
       <div class="gradient-circlel"> </div>
 
       <div class="relative flex items-center mx-40 my-20 z-1">
@@ -44,7 +44,9 @@ const HomePage = () => {
         <p className="text-center mt-5 italic text-lg">
           choose your learning journey
         </p>
-        <div class="gradient-circler"> </div>
+        <div className="">
+          <div class="gradient-circler"> </div>
+        </div>
         <div className="flex mx-40 mt-20 justify-center">
           <PlanCard
             title="Beginner"
@@ -63,7 +65,6 @@ const HomePage = () => {
           />
         </div>
       </div>
-
     </div>
   );
 };
