@@ -1,6 +1,7 @@
 import React from "react";
 import SideBar from "../components/SideBar";
 import Topic from "../components/Topic";
+import Footer from "../components/Footer";
 
 const LearnPage = () => {
   return (
@@ -8,6 +9,7 @@ const LearnPage = () => {
       <SideBar />
       <div className="w-72"></div>
       <Topic />
+
     </div>
   );
 };
