@@ -1,6 +1,6 @@
 import React from "react";
 import myImage from "../assets/images/hero_image.png";
-import { Button } from "@nextui-org/button";
+import PlanCard from "../components/PlanCard";
 
 const HomePage = () => {
   return (
@@ -17,6 +17,12 @@ const HomePage = () => {
           </div>
         </div>
         <img src={myImage} alt="my-image" />
+      </div>
+
+      <div className="flex mx-20 my-20">
+        <PlanCard title="Beginner" description="starting out!" />
+        <PlanCard title="Intermediate" description="getting there!" />
+        <PlanCard title="Advanced" description="professional!" />
       </div>
     </>
   );
