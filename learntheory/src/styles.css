@@ -11,6 +11,7 @@
   h6 {
     @apply font-outfit;
   }
+}
 
   .gradient-div {
     width: 2050px; /* Set the width of the div */
@@ -31,7 +32,7 @@
   align-items: center; /* Center vertically */
   font-size: 24px; /* Text size */
 }
-}
+
 body {
   background-color: #FBF9F8;
   /* Example: Tailwind's blue-500 */
