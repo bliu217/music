@@ -12,9 +12,9 @@ const Navigation = () => {
   return (
     <Navbar>
       <NavbarBrand>
-        <p className="font-bold">MELODIFY</p>
+        <h3 className="font-bold">MELODIFY</h3>
       </NavbarBrand>
-      <NavbarContent className="sm:flex gap-4" justify="end">
+      <NavbarContent className="sm:flex gap-4 font-outfit" justify="end">
         <NavbarItem>
           <Link color="foreground" href="#">
             LEARN
