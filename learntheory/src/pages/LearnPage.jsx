@@ -4,8 +4,9 @@ import Topic from "../components/Topic";
 
 const LearnPage = () => {
   return (
-    <div>
+    <div className="flex bg-parch">
       <SideBar />
+      <div className="w-1/4"></div>
       <Topic />
     </div>
   );

@@ -13,6 +13,14 @@ module.exports = {
         outfit: ['Outfit', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
       },
+      margin: {
+        '1/2': '50%',
+        '1/4': '25%',
+        '1/3': '33.333333%',
+        '2/3': '66.666667%',
+        '1/5': '20%',
+        // Add more as needed
+      },
     },
   },
   darkMode: "class",
