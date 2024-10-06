@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
 import HomePage from "./pages/HomePage";
+import LearnPage from "./pages/LearnPage";
 import { NextUIProvider } from "@nextui-org/system";
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
     createRoutesFromElements(
       <Route path="/" element={<MainLayout />}>
         <Route index element={<HomePage />} />
+        <Route path="/learn" element={<LearnPage />} />
       </Route>
     )
   );

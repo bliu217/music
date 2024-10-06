@@ -31,7 +31,7 @@ const HomePage = () => {
         
     </div>
 
-      <div className="justify-center mt-32">
+      <div className="justify-center mt-64">
         <h1 className="text-center font-bold text-3xl">COURSE PLANS</h1>
         <p className="text-center mt-5 italic text-lg">
           choose your learning journey

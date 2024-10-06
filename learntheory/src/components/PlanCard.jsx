@@ -12,7 +12,7 @@ const PlanCard = ({ title, description, image }) => {
   return (
     <Card
       radius="lg"
-      className="transition ease-in-out delay-150 border-solid border-2 border-black justify-center text-center flex-1 min-w-[200px] mx-10 shadow-mid-blue hover:border-yellow-300 duration-300"
+      className="border-solid border-2 border-black justify-center text-center flex-1 min-w-[200px] mx-10 shadow-mid-blue"
     >
       <CardHeader className="flex flex-col bg-parch py-5 justify-center pb-20">
         <h1 className="text-xl font-bold">{title}</h1>
@@ -22,9 +22,7 @@ const PlanCard = ({ title, description, image }) => {
         <h3>{description}</h3>
       </CardBody>
       <CardFooter className="justify-center">
-        <Button className="bg-bblue text-white font-outfit mb-5">
-          LEARN MORE
-        </Button>
+        <Button className="bg-bblue text-white font-outfit mb-5">GO TO</Button>
       </CardFooter>
     </Card>
   );
