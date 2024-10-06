@@ -6,8 +6,7 @@ import keyboard from "../assets/images/keyboard.png";
 import {
   Card,
   CardBody,
-  CardHeaderr,
-  CardBody,
+  CardHeader,
   Button,
   Link,
 } from "@nextui-org/react";
