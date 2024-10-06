@@ -4,8 +4,13 @@ import PlanCard from "../components/PlanCard";
 
 const HomePage = () => {
   return (
-    <div className="pb-20">
-      <div className="mx-40 my-20 flex">
+  
+    <div className="pb-20 z-index: 2">
+  
+       <div class = "gradient-circle">
+       </div>
+       
+      <div class = "mx-40 my-20 flex z-1"> 
         <div>
           <br></br>
           <br></br>
@@ -21,15 +26,17 @@ const HomePage = () => {
             of music theory at their own pace.
           </div>
         </div>
-        <img src={myImage} alt="my-image" class="w-[500px] h-[500px] ml-10" />
-      </div>
+        <img src={myImage} alt="my-image" class="w-[500px] h-[500px] ml-10 z-1"/>
+      </div>  
 
       <div className="flex mx-20 mt-20 justify-center">
         <PlanCard title="Beginner" description="starting out!" />
         <PlanCard title="Intermediate" description="getting there!" />
         <PlanCard title="Advanced" description="professional!" />
       </div>
+
     </div>
+  
   );
 };
 
