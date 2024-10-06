@@ -1,4 +1,4 @@
-import { Card } from "@nextui-org/react";
+import { Card, CardBody, CardHeader } from "@nextui-org/react";
 import React from "react";
 import ledger from "../assets/scorebuilder/ledger.png";
 import fourFour from "../assets/scorebuilder/4_4.png";
@@ -8,15 +8,17 @@ import quarter from "../assets/scorebuilder/quarterNote.png";
 import whole from "../assets/scorebuilder/wholeNote.png";
 import eight from "../assets/scorebuilder/eighthNotes.png";
 import measure from "../assets/scorebuilder/measureLine.png";
+import eightS from "../assets/scorebuilder/eighthNote.png";
+import noteLedger from "../assets/scorebuilder/noteCardLedger.png";
 
 const Topic = () => {
   return (
-    <div className="flex-1 p-16 h-screen">
-      <h1 className="font-bold text-5xl">RHYTHM</h1>
-      <div className="italic text-3xl text-dark-blue pb-24">notes</div>
+    <div className="flex-1 p-16 h-full bg-parch">
+      <h1 className="font-bold text-5xl">BASICS</h1>
+      <div className="italic text-3xl text-dark-blue">notes</div>
       <Card
         radius="lg"
-        className="border-solid border-2 border-black w-fit shadow-mid-blue relative"
+        className="border-solid border-2 border-black w-fit shadow-mid-blue relative my-20"
       >
         <div className="">
           <img
@@ -74,6 +76,103 @@ const Topic = () => {
           />
         </div>
       </Card>
+      <div className="font-poppins font-bold text-xl/7 w-[800px] p-10 border-t-2 border-b-2 border-gray-800">
+        Music notes are the symbols used to represent sounds in music. Each note
+        indicates a specific pitch (how high or low the sound is) and duration
+        (how long the sound lasts). The basic notes include A, B, C, D, E, F,
+        and G, which repeat in higher or lower octaves.
+      </div>
+      <h3 className="font-bold text-3xl my-20">DIFFERENT NOTES</h3>
+
+      <div className="my-10 mx-20">
+        <div className="grid grid-rows-2 grid-cols-2 gap-x-0 gap-y-8 bg-parch w-[600px] justify-items-center">
+          <Card
+            radius="lg"
+            className="border-solid border-2 border-black w-fit shadow-mid-blue relative"
+          >
+            <CardHeader className="p-10 border-b-2 border-black">
+              <div className="relative">
+                <img src={noteLedger} className="h-[120px]" />
+                <img
+                  src={whole}
+                  className="absolute left-[70px] top-[40px] h-[28px]"
+                />
+              </div>
+            </CardHeader>
+            <CardBody>
+              <h3 className="font-bold text-xl mb-3">WHOLE NOTE</h3>
+              <ul className="list-disc list-inside px-5 w-[250px]">
+                <li>longest note duration</li>
+                <li>resembles an open note head with no stem</li>
+                <li>lasts 4 beats</li>
+              </ul>
+            </CardBody>
+          </Card>
+          <Card
+            radius="lg"
+            className="border-solid border-2 border-black w-fit shadow-mid-blue relative"
+          >
+            <CardHeader className="p-10 border-b-2 border-black">
+              <div className="relative">
+                <img src={noteLedger} className="h-[120px]" />
+                <img
+                  src={half}
+                  className="absolute left-[52px] -top-[10px] h-[80px]"
+                />
+              </div>
+            </CardHeader>
+            <CardBody>
+              <h3 className="font-bold text-xl mb-3">HALF NOTE</h3>
+              <ul className="list-disc list-inside px-5 w-[250px]">
+                <li>half the value of a whole note</li>
+                <li>open note head with a stem</li>
+              </ul>
+            </CardBody>
+          </Card>
+          <Card
+            radius="lg"
+            className="border-solid border-2 border-black w-fit shadow-mid-blue relative"
+          >
+            <CardHeader className="p-10 border-b-2 border-black">
+              <div className="relative">
+                <img src={noteLedger} className="h-[120px]" />
+                <img
+                  src={quarter}
+                  className="absolute left-[52px] -top-[10px] h-[77px]"
+                />
+              </div>
+            </CardHeader>
+            <CardBody>
+              <h3 className="font-bold text-xl mb-3">QUARTER NOTE</h3>
+              <ul className="list-disc list-inside px-5 w-[250px]">
+                <li>filled note head with a stem</li>
+                <li>4 quarter notes = 1 whole note</li>
+              </ul>
+            </CardBody>
+          </Card>
+          <Card
+            radius="lg"
+            className="border-solid border-2 border-black w-fit shadow-mid-blue relative"
+          >
+            <CardHeader className="p-10 border-b-2 border-black">
+              <div className="relative">
+                <img src={noteLedger} className="h-[120px]" />
+                <img
+                  src={eightS}
+                  className="absolute left-[58px] -top-[10px] h-[130px]"
+                />
+              </div>
+            </CardHeader>
+            <CardBody>
+              <h3 className="font-bold text-xl mb-3">EIGHTH NOTE</h3>
+              <ul className="list-disc list-inside px-5 w-[250px]">
+                <li>filled note head with a stem and flag</li>
+                <li>2 eighth notes = 1 quarter note</li>
+              </ul>
+            </CardBody>
+          </Card>
+        </div>
+      </div>
     </div>
   );
 };

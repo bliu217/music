@@ -11,6 +11,9 @@
   h6 {
     @apply font-outfit;
   }
+div {
+  @apply font-poppins;
+}
 }
 
 .gradient-circlel {
@@ -58,7 +61,7 @@
 
 body {
   background-color: #FBF9F8;
-  /* Example: Tailwind's blue-500 */
+
 }
 .bg-parch {
   background-color: #FBF9F8;

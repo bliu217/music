@@ -39,7 +39,7 @@ const Topics = () => {
                 <Link
                   href="#"
                   color="foreground"
-                  className="font-bold uppercase text-3xl px-0"
+                  className="font-bold font-outfit uppercase text-3xl px-0"
                 >
                   {topic.title}
                 </Link>
